@@ -3,4 +3,5 @@
 export(boxplot_pt)
 export(distotable)
 export(format_string)
+export(sort_tree_tips)
 export(strsplit_vector)
