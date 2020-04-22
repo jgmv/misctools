@@ -15,7 +15,9 @@ format_string(
 )
 }
 \arguments{
-\item{s}{vector indicating the position of words in strings to show in italics.}
+\item{s}{string of text.}
+
+\item{i}{vector indicating the position of words in strings to show in italics.}
 
 \item{b}{vector indicating the position of words in strings to show in bold-face.}
 

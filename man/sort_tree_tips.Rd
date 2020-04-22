@@ -4,10 +4,12 @@
 \alias{sort_tree_tips}
 \title{Sort APE Tree Tips}
 \usage{
-sort_tree_tips(tree)
+sort_tree_tips(tree, show_names = T)
 }
 \arguments{
 \item{tree}{ape tree object.}
+
+\item{show_names}{if T, shows tip labels, otherwise shows order.}
 }
 \value{
 A list with the tip labels sorted as in the tree.

@@ -1,7 +1,8 @@
 #' Formats Text Strings For Plotting
 #'
 #' Formats differently words in a set of text strings for plotting.
-#' @param s vector indicating the position of words in strings to show in italics.
+#' @param s string of text.
+#' @param i vector indicating the position of words in strings to show in italics.
 #' @param b vector indicating the position of words in strings to show in bold-face.
 #' @param spt character indicating the separator between words.
 #' @param pattern regex pattern to select words to be omitted in formatting.
