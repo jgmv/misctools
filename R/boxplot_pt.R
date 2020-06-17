@@ -22,14 +22,21 @@
 #' boxplot_pt(y, x, jitter_amount = 0.1)
 boxplot_pt <- function(y, x, jitter_amount = NULL, bp_col = 0, bp_lty = 1,
   notch = F, width = NULL, varwidth = F, notch.frac = 0.5, border = par("fg"),
-  staplewex = 0, ...) {
+  staplewex = 0, range = 1.5, ...) {
 
   options(warn = -1)
 
   names(y) <- x 
+  tab <- data.frame(x = x, y = y)
   x_id <- 1:length(unique(x))
   names(x_id) <- unique(x)
-  x <- sort(x_id[x])
+  tab$z <- x_id[as.character(tab$x)]
+  tab <- tab[with(tab, order(z)), ]
+  y <- tab$y
+  names(y) <- tab$x
+  x <- tab$z
+  names(x) <- tab$x
+
   plot(y ~ x, type = "n", xaxt = "n", ...)
   axis(1, at = x_id, labels = names(x_id))
   if(!is.null(jitter_amount)) {
@@ -39,7 +46,7 @@ boxplot_pt <- function(y, x, jitter_amount = NULL, bp_col = 0, bp_lty = 1,
     boxplot(y[names(y) == i], at = x_id[i], add = T, axes = F,
       col = bp_col, lty = bp_lty, outline = F, notch = notch, width = width,
       varwidth = varwidth, notch.frac = notch.frac, border = border,
-      staplewex = staplewex)
+      staplewex = staplewex, range = range)
   }
   points(y ~ x, ...)
 

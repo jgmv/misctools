@@ -16,6 +16,7 @@ boxplot_pt(
   notch.frac = 0.5,
   border = par("fg"),
   staplewex = 0,
+  range = 1.5,
   ...
 )
 }
