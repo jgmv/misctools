@@ -12,6 +12,7 @@
 #' @param notch.frac see ?bxp.
 #' @param border see ?bxp.
 #' @param staplewex see ?bxp.
+#' @param range see ?bxp.
 #' @param ... further graphical arguments.
 #' @details Returns warnings because argumments are jointly passed to 'boxplot' and 'points'. Will solve later...
 #' @keywords boxplot
