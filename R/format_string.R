@@ -25,7 +25,7 @@ format_string <- function(s, i = NULL, b = NULL, spt = "_",
   }
 
   # define text chunks
-  chunks <- c("a", "b", "c", "d", "f", "g", "h", "i", "j", "k")
+  chunks <- c("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k")
   s <- sapply(s, function(x) strsplit(x, spt)[[1]])
   s[s == "|"] <- ""
   n <- nrow(s)

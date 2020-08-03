@@ -43,6 +43,8 @@ boxplot_pt(
 
 \item{staplewex}{see ?bxp.}
 
+\item{range}{see ?bxp.}
+
 \item{...}{further graphical arguments.}
 }
 \description{
