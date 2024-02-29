@@ -15,7 +15,7 @@
 #' @examples
 #' x <- c("Fusarium_oxysporum_P1304", "Alternaria_sp._P1555", "Fusarium_oxysporum_f.sp._melonis")
 #' format_string(x, i = 1:4, pattern = "P[0-9]", add_terms = "f.sp.")
-# format_string ----------------------------------------------------------------
+
 format_string <- function(s, i = NULL, b = NULL, spt = "_",
   sep = " ", pattern = NULL, add_terms = NULL) {
 

@@ -2,5 +2,6 @@
 
 export(distotable)
 export(format_string)
+export(fungalTraits_annotation)
 export(get_tax_info)
 export(plot_theme)
