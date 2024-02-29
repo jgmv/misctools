@@ -11,4 +11,6 @@ LazyData: true
 RoxygenNote: 7.1.0
 Imports:
   ape,
+  ggplot2,
+  myTAI,
   stringr
