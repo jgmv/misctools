@@ -9,7 +9,7 @@
 #' print(dm)
 #' distotable(dm)
 distotable <- function(dm){
-  dm <- as.dist(dm, diag = T, upper = T)
+  dm <- stats::as.dist(dm, diag = T, upper = T)
   dm <- as.matrix(dm)
   index <- expand.grid(rownames(dm), colnames(dm))
   index <- index[as.vector(lower.tri(dm, diag = F)), ]

@@ -1,6 +1,6 @@
 #' Loop to retrieve tanonomic names using myTAI::taxonomy
 #'
-#' Retreives taxon names at selected taxonomic ranks from a list of provided taxa
+#' Retrieves taxon names at selected taxonomic ranks from a list of provided taxa
 #' @param taxlist a vector of taxonomic names.
 #' @param ranks a vector with the taxonomic ranks at which retrieve the names.
 #' @param db the source database, as specified by myTAI::taxonomy.   

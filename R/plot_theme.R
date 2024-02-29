@@ -5,17 +5,16 @@
 #' @keywords plotting
 #' @export
 plot_theme <- function(...) {
-  require(ggplot2)
-  mytheme <- theme_classic() +
-    theme(axis.text = element_text(colour = "black", size = 10),
-      axis.title.x = element_text(size = 10),
-      axis.title.y = element_text(size = 10),
-      axis.ticks = element_line(colour = "black"),
-      axis.ticks.length = unit(0.1, "cm"),
-      strip.background = element_blank(),
-      panel.spacing = unit(1, "lines"),
-      strip.text.x = element_text(size = 12),
-      legend.key.height = unit(0.35, "cm"),
+  mytheme <- ggplot2::theme_classic() +
+    ggplot2::theme(axis.text = ggplot2::element_text(colour = "black", size = 10),
+      axis.title.x = ggplot2::element_text(size = 10),
+      axis.title.y = ggplot2::element_text(size = 10),
+      axis.ticks = ggplot2::element_line(colour = "black"),
+      axis.ticks.length = ggplot2::unit(0.1, "cm"),
+      strip.background = ggplot2::element_blank(),
+      panel.spacing = ggplot2::unit(1, "lines"),
+      strip.text.x = ggplot2::element_text(size = 12),
+      legend.key.height = ggplot2::unit(0.35, "cm"),
       ...)
   return(mytheme)
 }

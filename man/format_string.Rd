@@ -23,6 +23,8 @@ format_string(
 
 \item{spt}{character indicating the separator between words.}
 
+\item{sep}{character indicating the output separator.}
+
 \item{pattern}{regex pattern to select words to be omitted in formatting.}
 
 \item{add_terms}{vector with words to be omitted from formatting.}

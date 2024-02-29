@@ -5,6 +5,7 @@
 #' @param i vector indicating the position of words in strings to show in italics.
 #' @param b vector indicating the position of words in strings to show in bold-face.
 #' @param spt character indicating the separator between words.
+#' @param sep character indicating the output separator.
 #' @param pattern regex pattern to select words to be omitted in formatting.
 #' @param add_terms vector with words to be omitted from formatting.
 #' @keywords text
@@ -17,6 +18,9 @@
 # format_string ----------------------------------------------------------------
 format_string <- function(s, i = NULL, b = NULL, spt = "_",
   sep = " ", pattern = NULL, add_terms = NULL) {
+
+  # define variables locally
+  a <- b <- c <- d <- e <- f <- g <- h <- i <- j <- k <- NULL
 
   # modify shorter elements
   for(z in s[stringr::str_count(s, spt) < max(stringr::str_count(s, spt))]) {
@@ -54,7 +58,7 @@ format_string <- function(s, i = NULL, b = NULL, spt = "_",
       always.upright = terms),
     ape::mixedFontLabel(a, b, c, d, sep = sep, italic = i, bold = b,
       always.upright = terms),
-    mixedFontLabel(a, b, c, d, e, sep = sep, italic = i, bold = b,
+    ape::mixedFontLabel(a, b, c, d, e, sep = sep, italic = i, bold = b,
       always.upright = terms),
     ape::mixedFontLabel(a, b, c, d, e, f, sep = sep, italic = i,
       bold = b, always.upright = terms),

@@ -1,16 +1,17 @@
 Package: misctools
-Title: Miscellaneous Tools For General Use
+Title: Miscellaneous tools for personal use
 Version: 0.0.0.9000
 Authors@R: person("Jose G.", "Macia-Vicente", email = "jg.macia@gmail.com",
   role = c("aut", "cre"))
-Description: Collection of miscellaneous tools for general use.
+Description: A very messy R package compiling miscellaneous tools for personal use.
 Depends: R (>= 3.6.3)
-License: GPL-3
+License: GPL-3 + file LICENSE
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.0
+RoxygenNote: 7.2.3
 Imports:
-  ape,
-  ggplot2,
-  myTAI,
-  stringr
+    ape,
+    ggplot2,
+    myTAI,
+    stats,
+    stringr
