@@ -45,4 +45,3 @@ update_misctools <- function() {
   devtools::install()
   
 }
-update_misctools()

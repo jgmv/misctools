@@ -7,3 +7,9 @@ Install and update using [`devtools`](https://cran.r-project.org/web/packages/de
 devtools::install_github("jgmv/misctools")
 ```
 
+## Build package
+Build new package versions after modifying with the build script:
+```R
+source("data-raw/build_misctools.R")
+update_misctools()
+```
