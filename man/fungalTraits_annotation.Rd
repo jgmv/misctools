@@ -27,9 +27,7 @@ data frame
 Assigns fungal guilds using the FungalTraits database (https://doi.org/10.1007/s13225-020-00466-2) by comparing genus names. In the case of Glomeromycota, assignment to arbuscular mycorrhizal lifestyles can be optionally done at the phylum level.
 }
 \examples{
-tax <- read.csv(system.file("extdata", "example_taxonomy.csv",
-  package = "misctools"), h = TRUE, sep = ";")
-fungalTraits_annotation(tax)
+fungalTraits_annotation(example_taxonomy)
 }
 \keyword{fungal}
 \keyword{guild}

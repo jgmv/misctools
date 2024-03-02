@@ -9,15 +9,15 @@
 #' @keywords fungal guild
 #' @export
 #' @examples
-#' tax <- read.csv(system.file("extdata", "example_taxonomy.csv",
-#'   package = "misctools"), h = TRUE, sep = ";")
-#' fungalTraits_annotation(tax)
+#' fungalTraits_annotation(example_taxonomy)
 
 fungalTraits_annotation <- function(x, print_missing = F, amf = T,
   coltaxa = c("genus", "phylum")) {
-  ft <- utils::read.csv(system.file("extdata", "fungaltraits.csv",
-    package = "misctools"), h = T, sep = ";")
-  ft <- ft[!duplicated(ft$genus), ]
+  for(i in colnames(x)) {
+    x[, i] <- base::enc2utf8(x[, i])
+  }
+  ft <- fungaltraits
+  ft <- ft[!base::duplicated(ft$genus), ]
   if(print_missing) {
     nf <- unique(x[!(x$genus %in% ft$genus), ])
     if(length(nf) > 0) {

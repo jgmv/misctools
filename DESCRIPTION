@@ -1,9 +1,9 @@
 Package: misctools
-Title: Miscellaneous tools for personal use
-Version: 0.0.0.9000
+Title: Miscellaneous tools for general use
+Version: 0.0.0.9001
 Authors@R: person("Jose G.", "Macia-Vicente", email = "jg.macia@gmail.com",
   role = c("aut", "cre"))
-Description: A very messy R package compiling miscellaneous tools for personal use.
+Description: A very messy R package compiling miscellaneous tools for general use.
 Depends: R (>= 3.6.3)
 License: GPL-3 + file LICENSE
 Encoding: UTF-8
