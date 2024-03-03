@@ -11,5 +11,5 @@ devtools::install_github("jgmv/misctools")
 Build new package versions after modifying with the build script:
 ```R
 source("data-raw/build_misctools.R")
-update_misctools()
+build_misctools()
 ```

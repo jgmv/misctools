@@ -1,5 +1,5 @@
 # update misctools package
-update_misctools <- function() {
+build_misctools <- function() {
   
   ### load all functions
   devtools::load_all()

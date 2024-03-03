@@ -1,4 +1,5 @@
 #' Define global variables
-utils::globalVariables(c("fungaltraits"))
+#' @name Global variables
+utils::globalVariables(c("fungaltraits", "example_taxonomy"))
 
 
