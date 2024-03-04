@@ -38,7 +38,7 @@ build_misctools <- function() {
   base::system(paste0("git tag -a ", gsub("^Version: ", "v", v), " -m '", v, "'"))
 
   ### build local binary and manual
-  devtools::build()
+  #devtools::build()
   #devtools::build_manual()
 
   ### install locally

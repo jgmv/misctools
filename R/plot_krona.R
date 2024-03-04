@@ -6,11 +6,11 @@
 #' @param cdm community data matrix, or vector with total taxon abundance
 #' @param group a groupping vector for samples
 #' @param outfile name of the output file
-#' @return An html file with a Krona char.
+#' @return An html file with a Krona chart.
 #' @keywords taxonomy
 #' @export
-#' @example
-#' plot_krona(example_taxonomy)
+# @examples
+# plot_krona(example_taxonomy)
 
 plot_krona <- function(tax, cdm = NULL, group = NULL,
   outfile = "krona_plot.html") {

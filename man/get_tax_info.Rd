@@ -23,7 +23,4 @@ A data frame with the taxonomic names.
 \description{
 Retrieves taxon names at selected taxonomic ranks from a list of provided taxa
 }
-\examples{
-get_tax_info(c("Holcus lanatus", "Leontodon hispidus"))
-}
 \keyword{taxonomy}

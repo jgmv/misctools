@@ -16,7 +16,7 @@ plot_krona(tax, cdm = NULL, group = NULL, outfile = "krona_plot.html")
 \item{outfile}{name of the output file}
 }
 \value{
-An html file with a Krona char.
+An html file with a Krona chart.
 }
 \description{
 Plots a Krona chart from a taxonomy data set, with the option of including abundance data.

@@ -7,8 +7,8 @@
 #' @return A data frame with the taxonomic names.
 #' @keywords taxonomy
 #' @export
-#' @examples
-#' get_tax_info(c("Holcus lanatus", "Leontodon hispidus"))
+# @examples
+# get_tax_info(c("Holcus lanatus", "Leontodon hispidus"))
 get_tax_info <- function(taxlist, ranks = c("genus", "family", "order",
    "species"), db = "ncbi") {
   for(i in 1:length(taxlist)) {
