@@ -13,6 +13,7 @@
 find_species_range <- function(x, lon = "longitude", lat = "latitude") {
   xy <- as.matrix(x[, c(lon, lat)])
   xy <- stats::na.omit(xy)
+  xy <- xy[xy[, lon] %in% range(xy[, lon]) | xy[, lat] %in% range(xy[, lat]), ]
   if(nrow(xy) > 0) {
     xy_dist <- sp::spDists(xy, longlat = T)
     result <- max(xy_dist)
